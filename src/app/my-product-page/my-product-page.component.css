@@ -1,0 +1,72 @@
+h2 {
+    text-align: center;
+    color: black;
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: xx-large;
+    background-color: rgb(84, 235, 235);
+}
+
+footer {
+    bottom: 0;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.img-container img {
+    height: 250px;
+    width: 450px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 400px;
+}
+
+.ol {
+    text-align: left;
+}
+
+.description {
+    background-color: rgb(232, 189, 243);
+    text-align: center;
+    color: black;
+    font-size: xx-large;
+}
+
+.main {
+    align-items: center;
+}
+
+.pointerCursor {
+    cursor: pointer;
+}
+
+#backButton {
+    position: fixed;
+    bottom: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-left: 40px;
+    border: none;
+    border-style: inset;
+    width: 15%;
+}
+
+#submitButton {
+    position: fixed;
+    bottom: 0;
+    background-color: #4CAF50;
+    float: right;
+    color: white;
+    padding: 14px 20px;
+    margin-left: 1050px;
+    border: none;
+    border-style: inset;
+    width: 15%;
+}

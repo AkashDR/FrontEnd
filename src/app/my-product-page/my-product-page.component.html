@@ -1,0 +1,68 @@
+<header>Welcome to Products Page!!!</header>
+<div class="row">
+    <div class="main">
+        <div class=" description pointerCursor" (click)="panelExpanded1=!panelExpanded1">Laptop-Macbook</div>
+        <div class="img-container" *ngIf="panelExpanded1">
+            <tr>
+                <td><img [src]="'assets/img/Img1.png'" alt="Macbook"></td>
+                <td>
+                    <ul>
+                        <li>Prodcut Name.</li>
+                        <li>Product ID</li>
+                        <li>Prodcut Details</li>
+                        <b>Please give your Remarks: &nbsp;</b>
+                        <input type="text" [(ngModel)]="remarks1" name="remarks1">
+                        <button type="submit" (click)="submitForm()"> Save </button><br>
+                        <b> Previous Remarks : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+                        <div type="menu"> {{reremarks1}} </div>
+
+                    </ul>
+                </td>
+            </tr>
+        </div>
+    </div>
+    <div class="main">
+        <div class="description pointerCursor" (click)="panelExpanded2=!panelExpanded2">Mobile-OnePlus</div>
+        <div class="img-container" *ngIf="panelExpanded2">
+            <tr>
+                <td><img [src]="'assets/img/Img2.png'" alt="OnePlus-Nord"></td>
+                <td>
+                    <ul>
+                        <li>Prodcut Name.</li>
+                        <li>Product ID</li>
+                        <li>Prodcut Details</li>
+                        <b>Please give your Remarks:</b>
+                        <input type="text" [(ngModel)]="remarks2" name="remarks2">
+                        <button type="submit" (click)="submitForm()"> Save </button><br>
+                        <b> Previous Remarks : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+                        <div type="menu"> {{reremarks2}} </div>
+                    </ul>
+                </td>
+            </tr>
+        </div>
+    </div>
+    <div class="main">
+        <div class="description pointerCursor" (click)="panelExpanded3=!panelExpanded3">Watch-Fossil</div>
+        <div class="img-container" *ngIf="panelExpanded3">
+            <tr>
+                <td><img [src]="'assets/img/Img3.png'" alt="Fossil"></td>
+                <td>
+                    <ul>
+                        <li>Prodcut Name.</li>
+                        <li>Product ID</li>
+                        <li>Prodcut Details</li>
+                        <b>Please give your Remarks:</b>
+                        <input type="text" [(ngModel)]="remarks3" name="remarks3">
+                        <button type="submit" (click)="submitForm()"> Save </button><br>
+                        <b> Previous Remarks : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+                        <div type="menu" (click)="getSavedForm()"> {{reremarks3}} </div>
+                    </ul>
+                </td>
+            </tr>
+        </div>
+    </div>
+    <div class="bottom">
+        <button id="backButton" routerLink="/">Back</button>
+        <button id="submitButton" routerLink="/">Submit</button>
+    </div>
+    <footer>End of Products Page!!!</footer>

@@ -1,0 +1,11 @@
+<h2>Welcome User!!!</h2>
+<form class="container" action="/product">
+    <div>
+        <label for="mail"><b>Email-ID:</b></label>
+        <input type="text" placeholder="Enter mail ID" [(ngModel)]="mail" name="mail" required>
+        <label for="psw"><b>Phone Number</b></label>
+        <input type="text" placeholder="Enter Phone Number" [(ngModel)]="phoneNumber" name="phoneNumber" required>
+
+        <button (click)="myFunc()">NEXT</button>
+    </div>
+</form>
